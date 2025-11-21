@@ -47,13 +47,6 @@ To build and run this application, you need:
    - Ensure the Windows SDK is installed (included with Visual Studio).
    - Open the project in Visual Studio or configure your build system (e.g., MinGW with Windows SDK headers).
 
-4. **Build the Project**:
-   - Open the `.sln` file in Visual Studio or compile manually:
-     ```bash
-     g++ main.cpp -o AudioRouter -lole32 -lwinmm
-     ```
-   - Ensure the project links against `ole32.lib` and `winmm.lib`.
-
 ## 🎮 Usage
 
 1. **Configure Audio Settings**:
@@ -114,44 +107,3 @@ Key components:
 - **Device Enumeration**: Finds the VB-Audio Virtual Cable render endpoint.
 - **Audio Processing**: Real-time copying of audio buffers from the loopback capture to the virtual cable.
 - **Format Fallback**: Automatically switches to a compatible format if needed.
-
-## 📡 Future Improvements
-
-- **Microphone Mixing**: Add support for mixing real microphone input with desktop audio.
-- **Cross-Platform Support**: Integrate PortAudio for macOS and Linux compatibility.
-- **GUI Interface**: Develop a graphical interface for easier configuration.
-- **Latency Optimization**: Fine-tune buffer sizes for lower latency.
-- **Audio Effects**: Add options for volume control or audio filters.
-
-## 🤝 Contributing
-
-Contributions are welcome! To contribute:
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature`).
-3. Make your changes and commit (`git commit -m "Add your feature"`).
-4. Push to your branch (`git push origin feature/your-feature`).
-5. Open a Pull Request.
-
-Please follow the [Code of Conduct](CODE_OF_CONDUCT.md) and ensure your changes include appropriate documentation.
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code as per the license terms.
-
-## 🙌 Acknowledgments
-
-- **VB-Audio**: For providing the Virtual Cable software.
-- **Microsoft**: For the Windows Core Audio API documentation.
-- **FlamesIsCool**: For creating this project and sharing it with the community.
-
-## 📬 Contact
-
-For questions, issues, or suggestions, reach out via:
-- GitHub Issues: [Create an Issue](https://github.com/FlamesIsCool/Desktop-Audio-to-Virtual-Microphone-Router/issues)
-- Email: [your-email@example.com] (optional)
-- Discord: FlamesIsCool (optional)
-
----
-
-⭐ **Star this repository** if you find it useful!  
-Happy audio routing! 🎧
